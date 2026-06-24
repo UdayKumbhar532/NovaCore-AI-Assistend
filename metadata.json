@@ -1,0 +1,6 @@
+{
+  "name": "NovaCore AI Assistant",
+  "description": "A sleek, minimalist AI assistant and task manager featuring advanced offline capabilities and custom prompt engineering presets.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

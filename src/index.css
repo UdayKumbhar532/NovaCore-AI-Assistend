@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* ------------------------------------------------------------- */
+/* HIGH-CONTRAST LIGHT MODE THEME SELECTORS & OVERRIDES          */
+/* ------------------------------------------------------------- */
+
+/* Define variables for easy tweaking and absolute high-contrast consistency */
+:root {
+  --bg-main: #0d0e12;
+  --bg-sidebar: #111218;
+  --bg-card: #141520;
+  --bg-input: #12131c;
+  --bg-accent: #1f2233;
+  --border-color: #1d1f2d;
+  --border-secondary: #2d3148;
+}
+
+/* When .light is active, override classes beautifully */
+.light {
+  background-color: #f8fafc !important; /* slate-50 */
+  color: #0f172a !important; /* slate-900 */
+}
+
+/* Core layouts override */
+.light aside {
+  background-color: #f1f5f9 !important; /* slate-100 */
+  border-color: #cbd5e1 !important; /* slate-300 */
+}
+
+.light header {
+  background-color: rgba(241, 245, 249, 0.85) !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.light main {
+  background-color: #f8fafc !important;
+}
+
+/* Background utilities overrides */
+.light .bg-\[\#0d0e12\] {
+  background-color: #f8fafc !important;
+}
+
+.light .bg-\[\#111218\] {
+  background-color: #f1f5f9 !important;
+}
+
+.light .bg-\[\#141520\] {
+  background-color: #ffffff !important; /* Card background is crisp white */
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+.light .bg-\[\#141520\]\/60 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-\[\#141520\]\/50 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-\[\#12131c\] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-\[\#1a1c27\] {
+  background-color: #e2e8f0 !important; /* slate-200 */
+  color: #0f172a !important;
+}
+
+.light .bg-\[\#1a1c27\]\/40 {
+  background-color: rgba(226, 232, 240, 0.4) !important;
+}
+
+.light .bg-\[\#1a1c27\]\/60 {
+  background-color: rgba(226, 232, 240, 0.6) !important;
+}
+
+.light .bg-\[\#1f2233\] {
+  background-color: #e2e8f0 !important; /* slate-200 accent background */
+  color: #0f172a !important;
+}
+
+.light .bg-\[\#171924\] {
+  background-color: #e2e8f0 !important;
+}
+
+.light .bg-\[\#1c1d29\] {
+  background-color: #f1f5f9 !important;
+}
+
+.light .bg-\[\#13141d\]\/50 {
+  background-color: rgba(241, 245, 249, 0.8) !important;
+}
+
+.light .bg-slate-900\/60 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-slate-900\/40 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-slate-900\/30 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-slate-950 {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-slate-950\/90 {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Border utilities overrides - making sure light mode borders are crisp and high-contrast */
+.light .border-\[\#1d1f2d\] {
+  border-color: #cbd5e1 !important; /* high-contrast light slate-300 */
+}
+
+.light .border-\[\#1d1f2d\]\/50 {
+  border-color: rgba(203, 213, 225, 0.5) !important;
+}
+
+.light .border-\[\#1d1f2d\]\/60 {
+  border-color: rgba(203, 213, 225, 0.6) !important;
+}
+
+.light .border-\[\#2d3148\] {
+  border-color: #94a3b8 !important; /* slate-400 */
+}
+
+.light .border-\[\#242738\] {
+  border-color: #cbd5e1 !important;
+}
+
+.light .border-\[\#232738\]\/80 {
+  border-color: #cbd5e1 !important;
+}
+
+.light .border-transparent {
+  border-color: transparent !important;
+}
+
+/* Text color overrides */
+.light .text-slate-100 {
+  color: #0f172a !important; /* slate-900 */
+}
+
+.light .text-slate-200 {
+  color: #1e293b !important; /* slate-800 */
+}
+
+.light .text-slate-300 {
+  color: #334155 !important; /* slate-700 */
+}
+
+.light .text-slate-400 {
+  color: #475569 !important; /* slate-600 */
+}
+
+.light .text-slate-500 {
+  color: #64748b !important; /* slate-500 */
+}
+
+.light .text-slate-600 {
+  color: #475569 !important;
+}
+
+.light .text-white {
+  color: #0f172a !important;
+}
+
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+  color: #0f172a !important;
+}
+
+/* Brand/Color Text Accents in Light Mode for legibility */
+.light .text-sky-400 {
+  color: #0284c7 !important; /* sky-600 */
+}
+
+.light .text-indigo-400 {
+  color: #4f46e5 !important; /* indigo-600 */
+}
+
+.light .text-fuchsia-400 {
+  color: #c026d3 !important; /* fuchsia-600 */
+}
+
+.light .text-emerald-400 {
+  color: #16a34a !important; /* emerald-600 */
+}
+
+.light .text-amber-400 {
+  color: #d97706 !important; /* amber-600 */
+}
+
+.light .text-rose-400 {
+  color: #e11d48 !important; /* rose-600 */
+}
+
+.light .text-red-400 {
+  color: #dc2626 !important; /* red-600 */
+}
+
+/* Hover/active styling state overrides */
+.light .hover\:text-white:hover {
+  color: #000000 !important;
+}
+
+.light .hover\:bg-\[\#222535\]:hover {
+  background-color: #cbd5e1 !important;
+}
+
+.light .hover\:border-slate-700:hover {
+  border-color: #94a3b8 !important;
+}
+
+/* Inputs, Textareas, Options styling */
+.light textarea, .light input, .light select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+.light textarea::placeholder, .light input::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Specific component / markdown overrides */
+.light code {
+  background-color: #f1f5f9 !important;
+  color: #0369a1 !important; /* sky-700 */
+  border: 1px solid #cbd5e1 !important;
+}
+
+.light pre {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light pre code {
+  background-color: transparent !important;
+  border: none !important;
+  color: #334155 !important;
+}
+
+.light strong {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+/* Modal and dialog layout overrides */
+.light .fixed {
+  background-color: rgba(15, 23, 42, 0.75) !important; /* deep slate overlay */
+}
+
+.light .fixed .bg-\[\#141520\] {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
